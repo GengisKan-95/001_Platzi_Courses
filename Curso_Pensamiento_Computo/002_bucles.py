@@ -1,0 +1,12 @@
+hola1=iter('cadena')
+iter(['a', 'b', 'c'])
+iter(('a', 'b', 'c'))
+iter({'a', 'b', 'c'})
+iter({'a':1, 'b':2, 'c':3})
+#Funcionamiento interno del bucle FOR
+print(next(hola1))
+print(next(hola1))
+print(next(hola1))
+print(next(hola1))
+print(next(hola1))
+print(next(hola1))
