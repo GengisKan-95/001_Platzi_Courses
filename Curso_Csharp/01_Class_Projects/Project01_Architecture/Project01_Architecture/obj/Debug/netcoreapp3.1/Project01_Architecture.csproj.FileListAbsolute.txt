@@ -1,0 +1,13 @@
+C:\Users\camih\OneDrive\001_Study\010_Platzi\Curso_Csharp\01_Class_Projects\Project01_Architecture\Project01_Architecture\bin\Debug\netcoreapp3.1\Project01_Architecture.exe
+C:\Users\camih\OneDrive\001_Study\010_Platzi\Curso_Csharp\01_Class_Projects\Project01_Architecture\Project01_Architecture\bin\Debug\netcoreapp3.1\Project01_Architecture.deps.json
+C:\Users\camih\OneDrive\001_Study\010_Platzi\Curso_Csharp\01_Class_Projects\Project01_Architecture\Project01_Architecture\bin\Debug\netcoreapp3.1\Project01_Architecture.runtimeconfig.json
+C:\Users\camih\OneDrive\001_Study\010_Platzi\Curso_Csharp\01_Class_Projects\Project01_Architecture\Project01_Architecture\bin\Debug\netcoreapp3.1\Project01_Architecture.runtimeconfig.dev.json
+C:\Users\camih\OneDrive\001_Study\010_Platzi\Curso_Csharp\01_Class_Projects\Project01_Architecture\Project01_Architecture\bin\Debug\netcoreapp3.1\Project01_Architecture.dll
+C:\Users\camih\OneDrive\001_Study\010_Platzi\Curso_Csharp\01_Class_Projects\Project01_Architecture\Project01_Architecture\bin\Debug\netcoreapp3.1\Project01_Architecture.pdb
+C:\Users\camih\OneDrive\001_Study\010_Platzi\Curso_Csharp\01_Class_Projects\Project01_Architecture\Project01_Architecture\obj\Debug\netcoreapp3.1\Project01_Architecture.csproj.AssemblyReference.cache
+C:\Users\camih\OneDrive\001_Study\010_Platzi\Curso_Csharp\01_Class_Projects\Project01_Architecture\Project01_Architecture\obj\Debug\netcoreapp3.1\Project01_Architecture.AssemblyInfoInputs.cache
+C:\Users\camih\OneDrive\001_Study\010_Platzi\Curso_Csharp\01_Class_Projects\Project01_Architecture\Project01_Architecture\obj\Debug\netcoreapp3.1\Project01_Architecture.AssemblyInfo.cs
+C:\Users\camih\OneDrive\001_Study\010_Platzi\Curso_Csharp\01_Class_Projects\Project01_Architecture\Project01_Architecture\obj\Debug\netcoreapp3.1\Project01_Architecture.csproj.CoreCompileInputs.cache
+C:\Users\camih\OneDrive\001_Study\010_Platzi\Curso_Csharp\01_Class_Projects\Project01_Architecture\Project01_Architecture\obj\Debug\netcoreapp3.1\Project01_Architecture.dll
+C:\Users\camih\OneDrive\001_Study\010_Platzi\Curso_Csharp\01_Class_Projects\Project01_Architecture\Project01_Architecture\obj\Debug\netcoreapp3.1\Project01_Architecture.pdb
+C:\Users\camih\OneDrive\001_Study\010_Platzi\Curso_Csharp\01_Class_Projects\Project01_Architecture\Project01_Architecture\obj\Debug\netcoreapp3.1\Project01_Architecture.genruntimeconfig.cache
