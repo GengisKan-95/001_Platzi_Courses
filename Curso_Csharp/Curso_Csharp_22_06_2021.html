@@ -160,20 +160,50 @@
 						<h2>Apps moviles de Windows Phone y Android</h2>
 					</header>
 					<p>
+						<br>1. Ejecutar VSC como administrador<br>
+						<br>2. Clic derecho sobre la solucion, Agregar, Adicionar nuevo proyecto<br>
+						<br>3. Seleccionar "Windows -> Aplicacion en blanco -> Colocar nombre<br>
+						<br>4. Clic derecho al proyecto -> Establecer como proyecto predeterminado<br>
+						<br>5. Doble clic al archivo de "MainPage.xaml", la cual tiene un archivo XML y se puede editar visualmente<br>
+						<br>6. Crear un botón con ToolBox, cuadrar la resolución para celular<br>
+						<br>7. Abrir el panel de propiedades, cambiar el nombre <br>
+						<br>8. Luego de agregar la interfaz gráfica, clic derecho al proyecto y compilar, luego clic derecho e implementar<br>
+						<br>9. Lanzar la aplicacion para verifiar<br>
+						<br>10. Emular un celular y lanzar la aplicacion<br>
+						<br>11. Establecer un evento en las propiedades del botón con F4, activar el evento Tapped<br>
+						<br>12. En el evento tapped escribir lo siguiente<br>
+						<br>Codigo<br><br>
+						var httpclient = new HttpClient();<br>
+						string json = "{'Name':'William Gates Tercero'}"<br>
+						var respuesta = await httpclient.PostAsync("https://localhost:44345/api/Apprentices", 
+						new StringContect(json, Encoding.UTF8, "application/json"))
+						<br>14. Dar clic en propiedades del proyecto para ejecutar ambos proyectos a la vez<br>
+						<br>15. Colocar BreakPoints para realizar seguimiento del codigo<br>
+						<br><br><br>16.Ahora se crea aplicacion para Android<br>
+						<br>17. Clic derecho al proyecto, adicionar nuevo proyecto, RECORDAR DEJAR EL PROYECTO POR DEFECTO<br>
+						<br>18. Se selecciona Android -> Aplicacion en Blanco -> Nombre<br>
+						<br>19. En Resource -> Layout -> Main<br>
+						<br>20. Realizar funcionalidad del boton para agregar mas campos a la tabla<br>
+						<br><br>
+						<br><br>
+						<br><br>
 						Investigar acerca de Xamarin
 					</p>
 					<footer>
-						Pie del articulo
+						Ooootra vez, Hay un curso de Xamarin en Platzi, se debe tomar :D
 					</footer>
 				</article>
 			</section>
 			<section>
 				<article>
 					<header>
-						<h2>Apps móviles de Windows Phone y Android</h2>
+						<h2>Configurando neustro entorno en Linux</h2>
 					</header>
 					<p>
-						Leer acerca de SDK, virtualizacion para dispositivos móviles en Visual Studio, Emuladores para VS, que es Machine SLAT, etc
+						Investigar sobre C sharp multiplataforma y el proyecto punto NET core
+						Instalar en LINUX Visual Studio Code con el complemento para C sharp
+						 Instalar .Net Core desde http://donet.github.io/getting-stared/
+						 https://github.com/aspnet/home, clonar repositorio, Hay ejemplos para ejecutar desde Csharp
 					</p>
 					<footer>
 						Pie del articulo
