@@ -1,3 +1,5 @@
 {
-    "python.pythonPath": "python"
+    "python.pythonPath": "python",
+    "workbench.preferredDarkColorTheme": "Visual Studio Dark",
+    "workbench.colorTheme": "Deepdark Material Theme | Default Version"
 }
