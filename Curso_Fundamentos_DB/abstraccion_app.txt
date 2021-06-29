@@ -1,0 +1,11 @@
+Una aplicacion Android debe tener lo siguiente:
+Logo
+Nombre
+Creador
+Usuarios
+Categoria
+Notificaciones
+Servicio
+id
+Store
+Version
