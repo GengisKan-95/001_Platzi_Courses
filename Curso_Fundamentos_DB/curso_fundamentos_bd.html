@@ -64,7 +64,7 @@
 				<article>
 					<header><h2>Identificando entidades</h2></header>
 					<p>
-						Mi proyecto va relacionado con aplicaciones para android y teclados<br>
+						Mi proyecto va relacionado con Guitarras<br>
 						Realizar diagrama Entidad-Relacion<br>
 					</p>
 					<footer>
@@ -75,6 +75,13 @@
 				<article>
 					<header><h2>Relaciones</h2></header>
 					<p>
+						Las relaciones nos permiten ligar o unir nuestras diferentes entidades y se representan con rombos.
+						Por convención se definen a través de verbos. Las relaciones tienen una propiedad llamada cardinalidad
+						y tiene que ver con números. Cuántos de un lado pertenecen a cuántos del otro lado:<br><br>
+						Cardinalidad: 1 a 1<br>
+						Cardinalidad: 0 a 1<br>
+						Cardinalidad: 1 a N<br>
+						Cardinalidad: 0 a N<br>
 					</p>
 					<footer>
 					</footer>
@@ -84,6 +91,7 @@
 				<article>
 					<header><h2>Multiples</h2></header>
 					<p>
+						Cardinalidad N a N.
 					</p>
 					<footer>
 					</footer>
@@ -93,6 +101,32 @@
 				<article>
 					<header><h2>Diagrama Entidad-Relacion</h2></header>
 					<p>
+						es una herramienta para el modelo de datos, la cual facilita la representación de entidades de una base de datos. 
+						Fue definido por Peter Chen en 1976.<br>
+						Anteriormente detallamos los conceptos relacionados al modelo ER, en esta sección profundizaremos en como representarlos gráficamente.
+						 Cabe destacar que para todo proceso de modelado, siempre hay que tener en claro los conceptos,
+						  estos nos brindan conocimiento necesario y además fundamentan nuestro modelo al momento de presentarlo a terceros.
+						Formalmente, los diagramas ER son un lenguaje gráfico para describir conceptos. Informalmente, 
+						son simples dibujos o gráficos que describen información que trata un sistema de información y el software que lo automatiza.<br>
+						<br>Entidades<br>
+						Las entidades son el fundamento del modelo entidad relación. Podemos adoptar como definición de entidad cualquier cosa
+						 o parte del mundo que es distinguible del resto. Por ejemplo, en un sistema bancario,
+						  las personas y las cuentas bancarias se podrían interpretar como entidades. 
+						  Las entidades pueden representar entes concretos, como una persona o un avión, o abstractas, 
+						  como por ejemplo un préstamo o una reserva. Se representan por medio de un rectángulo y 
+						  pueden ser de tipo: maestras, transaccionales, históricas y temporales.
+						<br>Atributos<br>
+						Se representan mediante un círculo o elipse etiquetado mediante un nombre en su interior. 
+						Cuando un atributo es identificativo de la entidad se suele subrayar dicha etiqueta.
+						Por motivos de legibilidad, los atributos suelen no aparecer representados en el diagrama entidad-relación,
+						 sino descritos textualmente en otros documentos adjuntos.
+						<br>Relación<br>
+						Describe cierta dependencia entre entidades o permite la asociación de las mismas.
+						Por ejemplo:<br>
+						Si tenemos dos entidades, CLIENTE y HABITACIÓN, podemos entender la relación entre ambas al tomar un caso concreto 
+						(ocurrencia) de cada una de ellas. Entonces, podríamos tener la ocurrencia Habitación 502, de la entidad HABITACIÓN
+						 y la ocurrencia Henry Johnson McFly Bogard, de la entidad CLIENTE, entre las que es posible 
+						 relacionar que la habitación 502 se encuentra ocupada por el huésped de nombre Henry Johnson McFly Bogard.
 					</p>
 					<footer>
 					</footer>
@@ -102,6 +136,20 @@
 				<article>
 					<header><h2>Diagrama fisico: Tipos de datos y constraints</h2></header>
 					<p>
+						Para llevar a la práctica un diagrama debemos ir más allá y darle detalle con parámetros como:<br>
+						Tipos de dato:<br>
+						Texto: CHAR(n), VARCHAR(n), TEXT<br>
+						Números: INTEGER, BIGINT, SMALLINT, DECIMAL(n,s), NUMERIC(n,s)<br>
+						Fecha/hora: DATE, TIME, DATETIME, TIMESTAMP<br>
+						Lógicos: BOOLEAN<br><br>
+						Constraints (Restricciones)<br>
+						NOT NULL: Se asegura que la columna no tenga valores nulos<br>
+						UNIQUE: Se asegura que cada valor en la columna no se repita<br>
+						PRIMARY KEY: Es una combinación de NOT NULL y UNIQUE<br>
+						FOREIGN KEY: Identifica de manera única una tupla en otra tabla<br>
+						CHECK: Se asegura que el valor en la columna cumpla una condición dada<br>
+						DEFAULT: Coloca un valor por defecto cuando no hay un valor especificado<br>
+						INDEX: Se crea por columna para permitir búsquedas más rápidas<br>
 					</p>
 					<footer>
 					</footer>
