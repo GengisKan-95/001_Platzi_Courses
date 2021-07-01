@@ -159,6 +159,12 @@
 				<article>
 					<header><h2>Diagrama fisico: normalizacion</h2></header>
 					<p>
+						La normalización como su nombre lo indica nos ayuda a dejar todo de una forma normal. 
+						Esto obedece a las 12 reglas de Codd y nos permiten separar componentes en la base de datos:<br>
+						Primera forma normal (1FN): Atributos atómicos (Sin campos repetidos)<br>
+						Segunda forma normal (2FN): Cumple 1FN y cada campo de la tabla debe depender de una clave única.<br>
+						Tercera forma normal (3FN): Cumple 1FN y 2FN y los campos que NO son clave, NO deben tener dependencias.<br>
+						Cuarta forma normal (4FN): Cumple 1FN, 2FN, 3FN y los campos multivaluados se identifican por una clave única.<br>
 					</p>
 					<footer>
 					</footer>
@@ -168,6 +174,8 @@
 				<article>
 					<header><h2>Diagrama fisico:normalizacion PlatziBlog</h2></header>
 					<p>
+						Creacion de una nueva entidad para solventar el problema de muchos a muchos, almacenando un tipo nuevo de llave
+						en la cual convina la llave primaria con la llave foranea en 2 campos, identificando el ID de cada una.
 					</p>
 					<footer>
 					</footer>
@@ -177,9 +185,211 @@
 				<article>
 					<header><h2>Formas normales en DB Relacionales</h2></header>
 					<p>
+						La normalización en las bases de datos relacionales es uno de esos temas que, 
+						por un lado es sumamente importante y por el otro suena algo esotérico. 
+						Vamos a tratar de entender las formas normales (FN) de una manera simple para que 
+						puedas aplicarlas en tus proyectos profesionales.<br><br>						
+						Aplicaremos las reglas de Normalización<br><br>
+						----1FN: El valor de una columna debe ser una entidad atómica, indivisible,
+						excluyendo así las dificultades que podría conllevar el tratamiento de un dato formado de varias partes.<br>
+						----2FN: Una tabla se encuentra en 2FN cuando está en 1FN y no contiene dependencias parciales. 
+						Por consiguiente, una tabla 1FN automáticamente está en 2FN si su clave primaria está basada 
+						solamente en un atributo simple. Una tabla en 2FN aún puede contener dependencias transitivas.<br>
+						----3FN: Cumple con la 1FN y 2FN y los campos que NO son clave, NO deben tener dependencias. 
+						Se debe seguir analizando la estructura de las tablas, para evitar que no haya registros con campos no dependientes.<br>
+						----4FN: Cumple 1FN, 2FN, 3FN y los campos multivaluados se identifican por una clave única.
 					</p>
 					<footer>
 					</footer>
+				</article>
+			</section>
+		</div>
+		<div>
+			<section>
+				<article>
+					<header><h2>¿Que es RDB?</h2></header>
+					<p>
+						RDBMS significa Relational Database Management System o sistema manejador de bases de datos relacionales. 
+						Es un programa que se encarga de seguir las reglas de Codd y se puede utilizar de manera programática.<br>
+						Investigar sobre manejadores de bases de datos relacionales<br>
+						<br>Algunos son: Oralce, MySQL, PostGresSQL.
+					</p>
+					<footer></footer>
+				</article>
+			</section>
+		</div>
+		<div>
+			<section>
+				<article>
+					<header><h2>Instalacion local de un RDBMS</h2></header>
+					<p>
+						Se instalara MySQL.<br>
+						1. Ir a la pagina oficial de MySQL<br>
+						2. Descargas para Windows<br>
+						3. Descargar y ejecutar el instalador<br>
+						4. 
+					</p>
+					<footer></footer>
+				</article>
+			</section>
+			<section>
+				<article>
+					<header><h2>Instalacion en Linux</h2></header>
+					<p>
+						Pendiente!!!!!!!!!!
+					</p>
+					<footer></footer>
+				</article>
+			</section>
+			<section>
+				<article>
+					<header><h2>Clientes graficos</h2></header>
+					<p>
+						MySQL WorkBench-Cliente grafico: Entender de manera mas sencilla una base de datos.
+						Crear una nueva base de datos en MySQL<br>
+						1. Realizar el paso a paso
+					</p>
+					<footer></footer>
+				</article>
+			</section>
+			<section>
+				<article>
+					<header><h2>Servicios administrados o Servicios Cloud</h2></header>
+					<p>
+						Hoy en día muchas empresas ya no tienen instalados en sus servidores los RDBMS 
+						sino que los contratan a otras personas. Estos servicios administrados cloud te permiten 
+						concentrarte en la base de datos y no en su administración y actualizacion.<br>
+						<br><br>
+						Configurar Google Cloud Patform para conectar nuestra base de datos MySQL
+					</p>
+					<footer></footer>
+				</article>
+			</section>
+		</div>
+		<div>
+			<section>
+				<article>
+					<header><h2>Historia de SQL</h2></header>
+					<p>
+						SQL significa Structured Query Language y tiene una estructura clara y fija. 
+						Su objetivo es hacer un solo lenguaje para consultar cualquier manejador de bases de datos
+						 volviéndose un gran estándar.<br><br>
+						Ahora existe el NOSQL o Not Only Structured Query Language que significa 
+						que no sólo se utiliza SQL en las bases de datos no relacionales.<br><br>
+						Este lenguaje se basa en la teoria de conjuntos, algebra relacional de Codd<br>
+						Leer acerca de las normas ANSI/ISO<br>
+					</p>
+					<footer></footer>
+				</article>
+			</section>
+			<section>
+				<article>
+					<header><h2>DDL Create -> Data Definitio Language</h2></header>
+					<p>
+						DDL es un lenguaje que nos ayuda a crear la estructura de una base de datos.<br>
+						Existen 3 grandes comandos:<br><br>
+						Create: Nos ayuda a crear bases de datos, tablas, vistas, índices, etc.<br>
+						Alter: Ayuda a alterar o modificar entidades.<br>
+						Drop: Nos ayuda a borrar. Hay que tener cuidado al utilizarlo.<br>
+						3 objetos que manipularemos con el lenguaje DDL:<br><br>
+						Database o bases de datos<br>
+						Table o tablas. Son la traducción a SQL de las entidades<br>
+						View o vistas: Se ofrece la proyección de los datos de la base de datos de forma entendible.<br>
+						Investigar el uso de: <br>
+						CREATE TABLE statement,
+						DROP statement,
+						ALTER statement,
+						TRUNCATE statement
+					</p>
+					<footer></footer>
+				</article>
+			</section>
+			<section>
+				<article>
+					<header><h2>CREATE VIEW y DDL ALTER</h2></header>
+					<p>
+						CREATE VIEW:<br>
+						Estructura: CREATE VIEW v_nombre_de_la_vista AS<br>
+						SELECT columna_de_DB, otraColumna_de_DB<br>
+						FROM nombre_DB WHERE campos="Valor del campo"<br><br><br>
+						ALTER TABLE<br>
+						Estructura: ALTER TABLE nombre_DB<br>
+						ADD nombre_nueva_columna tipo_De_dato;<br>Para modificar:<br>
+						ALTER TABLE nombre_DB<br>
+						ADD nombre_columna nombre_columna tipo_De_dato;
+					</p>
+					<footer></footer>
+				</article>
+			</section>
+			<section>
+				<article>
+					<header><h2></h2></header>
+					<p></p>
+					<footer></footer>
+				</article>
+			</section>
+			<section>
+				<article>
+					<header><h2></h2></header>
+					<p></p>
+					<footer></footer>
+				</article>
+			</section>
+			<section>
+				<article>
+					<header><h2></h2></header>
+					<p></p>
+					<footer></footer>
+				</article>
+			</section>
+			<section>
+				<article>
+					<header><h2></h2></header>
+					<p></p>
+					<footer></footer>
+				</article>
+			</section>
+			<section>
+				<article>
+					<header><h2></h2></header>
+					<p></p>
+					<footer></footer>
+				</article>
+			</section>
+		</div>
+		<div>
+			<section>
+				<article>
+					<header><h2></h2></header>
+					<p></p>
+					<footer></footer>
+				</article>
+			</section>
+		</div>
+		<div>
+			<section>
+				<article>
+					<header><h2></h2></header>
+					<p></p>
+					<footer></footer>
+				</article>
+			</section>
+		</div>
+		<div>
+			<section>
+				<article>
+					<header><h2></h2></header>
+					<p></p>
+					<footer></footer>
+				</article>
+			</section>
+		</div>
+		<div>
+			<section>
+				<article>
+					<header><h2></h2></header>
+					<p></p>
+					<footer></footer>
 				</article>
 			</section>
 		</div>
