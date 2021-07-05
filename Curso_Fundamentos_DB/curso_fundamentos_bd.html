@@ -323,35 +323,44 @@
 			</section>
 			<section>
 				<article>
-					<header><h2></h2></header>
+					<header><h2>DROP statement</h2></header>
+					<p>
+						Estructura: DROP tipo_de_objeto(ejm: TABLE) elemento(ejem: nombre_TABLE)
+					</p>
+					<footer></footer>
+				</article>
+			</section>
+			<section>
+				<article>
+					<header><h2>Lenguaje DML</h2></header>
+					<p>
+						<h3>INSERT INTO</h3><br><br>
+						INSERT INTO guitars.brand (name_company, email, address) <br>
+						VALUES ('gibson','customer_service@gibson.com','36°07′48″N 86°43′33″O');<br><br>
+						<br><h3>UPDATE</h3><br><br>
+						UPDATE guitar.brand<br>
+						SET email = 'customer.service@allguitar.com'<br>
+						WHERE name_company='gibson';<br><br>
+						<br><h3>DELETE</h3><br>
+						DELETE FROM guitars.brand<br>
+						WHERE email = 'customer.service@gibson.com'<br><br>
+						<br><h3>SELECT</h3><br><br>
+						SELECT first_name, last_name<br>
+						FROM people
+					</p>
+					<footer></footer>
+				</article>
+			</section>
+			<section>
+				<article>
+					<header><h2>¿Porque SQL es estandar?</h2></header>
 					<p></p>
 					<footer></footer>
 				</article>
 			</section>
 			<section>
 				<article>
-					<header><h2></h2></header>
-					<p></p>
-					<footer></footer>
-				</article>
-			</section>
-			<section>
-				<article>
-					<header><h2></h2></header>
-					<p></p>
-					<footer></footer>
-				</article>
-			</section>
-			<section>
-				<article>
-					<header><h2></h2></header>
-					<p></p>
-					<footer></footer>
-				</article>
-			</section>
-			<section>
-				<article>
-					<header><h2></h2></header>
+					<header><h2>Tablas individuales y transitivas</h2></header>
 					<p></p>
 					<footer></footer>
 				</article>
@@ -360,13 +369,72 @@
 		<div>
 			<section>
 				<article>
-					<header><h2></h2></header>
-					<p></p>
+					<header><h2>¿Porque las consultas (Querys) son tan importantes?</h2></header>
+					<p>
+						Las consultas o queries a una base de datos son una parte fundamental ya que 
+						esto podría salvar un negocio o empresa.<br>
+						Alrededor de las consultas a las bases de datos se han creado varias especialidades 
+						como ETL o transformación de datos, business intelligence e incluso machine learning.
+					</p>
 					<footer></footer>
 				</article>
 			</section>
-		</div>
-		<div>
+			<section>
+				<article>
+					<header><h2>Estructura basica de un Query</h2></header>
+					<p>
+						Los queries son la forma en la que estructuramos las preguntas que se harán 
+						a la base de datos. Transforma preguntas en sintaxis.<br>
+						El query tiene básicamente 2 partes: SELECT y FROM y puede aparecer una tercera 
+						como WHERE.<br>
+						La estrellita o asterisco (*) quiere decir que vamos a seleccionar todo sin filtrar campos.<br>
+						<br>Ejemplo:<br><br> SELECT city, count(*) AS total<br>FROM people<br> WHERE active = true <br>
+						GROUP BY city <br>ORDER BY total DESC  <br>HAVING total >=2;
+					</p>
+					<footer></footer>
+				</article>
+			</section>
+			<section>
+				<article>
+					<header><h2>Statement SELECT</h2></header>
+					<p>
+						Esta palabra nos ayudara a seleccionar los datos que deseamos mostrar, renombrar ciertas columnas y
+						 traer datos de conteo. 
+					</p>
+					<footer>INVESTIGAR MAS A FONDO SELECT</footer>
+				</article>
+			</section>
+			<section>
+				<article>
+					<header><h2>Statement FROM</h2></header>
+					<p>
+						FROM indica de dónde se deben traer los datos y puede ayudar a hacer sentencias 
+						y filtros complejos cuando se quieren unir tablas. La sentencia compañera que 
+						nos ayuda con este proceso es JOIN.<br><br>
+						Los diagramas de Venn son círculos que se tocan en algún punto para ver dónde 
+						está la intersección de conjuntos. Ayudan mucho para poder formular la sentencia 
+						JOIN de la manera adecuada dependiendo del query que se quiere hacer.<br><br>
+						Diferencia: LEFT JOIN, RIGHT JOIN<br>
+						Interseccion: INNER JOIN<br>
+						Union: OUTER JOIN<br>
+						Diferencia simetrica:<br>
+					</p>
+					<footer>Ver ejemplos en YOUTUBE</footer>
+				</article>
+			</section>
+			<section>
+				<article>
+					<header><h2>Statement WHERE</h2></header>
+					<p>
+						LIKE
+						BETWEEN AND 
+						NOT
+						FILTRADO POR FECHA
+						NULO Y NO NULO 
+					</p>
+					<footer></footer>
+				</article>
+			</section>
 			<section>
 				<article>
 					<header><h2></h2></header>
@@ -374,8 +442,6 @@
 					<footer></footer>
 				</article>
 			</section>
-		</div>
-		<div>
 			<section>
 				<article>
 					<header><h2></h2></header>
@@ -383,8 +449,27 @@
 					<footer></footer>
 				</article>
 			</section>
-		</div>
-		<div>
+			<section>
+				<article>
+					<header><h2></h2></header>
+					<p></p>
+					<footer></footer>
+				</article>
+			</section>
+			<section>
+				<article>
+					<header><h2></h2></header>
+					<p></p>
+					<footer></footer>
+				</article>
+			</section>
+			<section>
+				<article>
+					<header><h2></h2></header>
+					<p></p>
+					<footer></footer>
+				</article>
+			</section>
 			<section>
 				<article>
 					<header><h2></h2></header>
