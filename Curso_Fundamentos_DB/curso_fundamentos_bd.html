@@ -17,22 +17,23 @@
 						1. Historia de persistencia de datos, en general, de la informacio<br>	
 						1.1 Arcilla, piedra, papiro, pergamino, papel, microFilm, discos duros, nube.<br>	
 						2. ¿Que son las bases de datos?<br>
-						2.1<br>
+						2.1 Una base de datos es una colección organizada de información estructurada, 
+						o datos, típicamente almacenados electrónicamente en un sistema de computadora<br>
 						3. Tipos de bases de datos<br>
 						3.1 Relacionales: SQL Server, Oracle, PostGresSQL, mySQL, MariaDB.<br>
 						3.2 Las 12 reglas de Codd<br>
-						Regla de la infromacion<br>
-						Del acceso garantizado<br>
-						Tratamiento sitematico de valores nulos<br>
-						Catalogo dinamico en linea basado en el modelo relacional<br>
-						Del sub lenguaje de datos completo<br>
-						De actualizacion de vistas<br>
-						Insert, update y delete de alto nivel<br>
-						Independencia de la representacion fisica de datos<br>
-						Independencia de modificadores logicos de datos<br>
-						Independencia de las restricciones de integridad<br>
-						Independencia distribuida<br>
-						Regla de la no SUBVERSION<br>	
+							Regla de la infromacion<br>
+							Del acceso garantizado<br>
+							Tratamiento sitematico de valores nulos<br>
+							Catalogo dinamico en linea basado en el modelo relacional<br>
+							Del sub lenguaje de datos completo<br>
+							De actualizacion de vistas<br>
+							Insert, update y delete de alto nivel<br>
+							Independencia de la representacion fisica de datos<br>
+							Independencia de modificadores logicos de datos<br>
+							Independencia de las restricciones de integridad<br>
+							Independencia distribuida<br>
+							Regla de la no SUBVERSION<br>	
 						3.2 No relacionales: Cassandra, DinamoDB, MongoDB, Elasticsearch<br>
 						3.3 Auto administrados: Tu mismo te encargas del mantenimiento hardware y software<br>
 						3.4 Servicios que ofrecen las empresas, Azure, Amazon y Google<br>
@@ -354,7 +355,9 @@
 			<section>
 				<article>
 					<header><h2>¿Porque SQL es estandar?</h2></header>
-					<p></p>
+					<p>
+						Structured Query Language
+					</p>
 					<footer></footer>
 				</article>
 			</section>
@@ -437,43 +440,390 @@
 			</section>
 			<section>
 				<article>
-					<header><h2></h2></header>
-					<p></p>
+					<header><h2>Sentencia GROUP BY</h2></header>
+					<p>
+						GROUP BY tiene que ver con agrupación. Indica a la base de datos qué criterios 
+						debe tener en cuenta para agrupar.
+
+						Agrupar por 
+					</p>
 					<footer></footer>
 				</article>
 			</section>
 			<section>
 				<article>
-					<header><h2></h2></header>
-					<p></p>
+					<header><h2>ORDER BY and HAVING</h2></header>
+					<p>
+						La sentencia ORDER BY tiene que ver con el ordenamiento de los datos 
+						dependiendo de los criterios que quieras usar.<br>
+						ASC sirve para ordenar de forma ascendente.<br>
+						DESC sirve para ordenar de forma descendente.<br>
+						LIMIT se usa para limitar la cantidad de resultados que arroja el query.<br>
+						HAVING tiene una similitud muy grande con WHERE, sin embargo 
+						el uso de ellos depende del orden. Cuando se quiere seleccionar
+						 tuplas agrupadas únicamente se puede hacer con HAVING.<br>
+					</p>
 					<footer></footer>
 				</article>
 			</section>
 			<section>
 				<article>
-					<header><h2></h2></header>
-					<p></p>
+					<header><h2>El interminable agujero de conejo (Nested queries)</h2></header>
+					<p>
+						Los Nested queries significan que dentro de un query podemos hacer otro 
+						query. <br>Esto sirve para hacer join de tablas, estando una en memoria. 
+						También teniendo un query como condicional del otro.<br><br>
+						Este proceso puede ser tan profundo como quieras, teniendo infinitos 
+						queries anidados.<br>Se le conoce como un producto cartesiano ya que se multiplican 
+						todos los registros de una tabla con todos los del nuevo query.<br>
+						Esto provoca que el query sea difícil de procesar por lo pesado que puede resultar.<br>
+					</p>
 					<footer></footer>
 				</article>
 			</section>
 			<section>
 				<article>
-					<header><h2></h2></header>
-					<p></p>
+					<header><h2>¿Cómo convertir una pregunta en un query SQL?</h2></header>
+					<p>
+						De pregunta a Query<br><br>
+						SELECT: Lo que quieres mostrar<br>
+						FROM: De dónde voy a tomar los datos<br>
+						WHERE: Los filtros de los datos que quieres mostrar<br>
+						GROUP BY: Los rubros por los que me interesa agrupar la información<br>
+						ORDER BY: El orden en que quiero presentar mi información<br>
+						HAVING: Los filtros que quiero que mis datos agrupados tengan<br>
+					</p>
 					<footer></footer>
 				</article>
 			</section>
 			<section>
 				<article>
-					<header><h2></h2></header>
-					<p></p>
+					<header><h2>Preguntandole a la base de datos</h2></header>
+					<p>
+						Preguntas a mi proyecto de guitarras :D
+						Palabra clave CONCAT
+						Palabra clave CASE
+						GROUP_CONCAT
+						DISTINCT
+					</p>
+					<footer>Adjuntar resultados de los Querys de mi proyecto</footer>
+				</article>
+			</section>
+			<section>
+				<article>
+					<header><h2>Consultando PlatziBlog</h2></header>
+					<p>
+						d
+					</p>
+					<footer></footer>
+				</article>
+			</section>
+		</div>
+		<div>
+			<section>
+				<article>
+					<header><h2>¿Qué son y cuáles son los tipos de bases de datos no relacionales? </h2></header>
+					<p>
+						Respecto a las bases de datos no relacionales, no existe un solo tipo aunque se 
+						engloben en una sola categoría.<br><br>
+						Tipos de bases de datos no relacionales:<br><br>
+						Clave - valor: Son ideales para almacenar y extraer datos con una clave única.<br> 
+						Manejan los diccionarios de manera excepcional. Ejemplos: DynamoDB, Cassandra.<br>
+						Basadas en documentos: Son una implementación de clave valor que varía 
+						en la forma semiestructurada en que se trata la información. 
+						Ideal para almacenar datos JSON y XML. Ejemplos: MongoDB, Firestore.<br>
+						Basadas en grafos: Basadas en teoría de grafos, sirven para entidades que 
+						se encuentran interconectadas por múltiples relaciones. 
+						Ideales para almacenar relaciones complejas. Ejemplos: neo4j, TITAN.<br>
+						En memoria: Pueden ser de estructura variada, pero su ventaja radica en la velocidad, 
+						ya que al vivir en memoria la extracción de datos es casi inmediata. Ejemplos: Memcached, Redis.<br>
+						Optimizadas para búsquedas: Pueden ser de diversas estructuras, 
+						su ventaja radica en que se pueden hacer queries y búsquedas complejas de manera sencilla.<br>
+						 Ejemplos: BigQuery, Elasticsearch.
+					</p>
 					<footer></footer>
 				</article>
 			</section>
 			<section>
 				<article>
-					<header><h2></h2></header>
-					<p></p>
+					<header><h2>Servicios administrados y jerarquía de datos</h2></header>
+					<p>
+						<h3>Firestore</h3><br><br>
+						Firebase es un servicio de Google donde puedes tercerizar muchos elementos en la nube.<br>
+						Jerarquía de datos:<br><br>
+						Base de datos<br>
+						Colección<br>
+						Documento<br>
+					</p>
+					<footer>Investigar Firestore</footer>
+				</article>
+			</section>
+		</div>
+		<div>
+			<section>
+				<article>
+					<header><h2>Top level collection con Firebase</h2></header>
+					<p>
+						El modelo de bases de datos no relacionales es un poco más cercano al mundo 
+						real en su comportamiento.<br>
+						Las top level collections son las colecciones que se tienen de inmediato 
+						o entrada en el proyecto.<br>
+						Firebase es un servicio que tiene múltiples opciones y está pensado 
+						principalmente para aplicaciones móviles y web.<br>
+						<br>https://console.firebase.google.com/ 
+					</p>
+					<footer>Ingresar a Firebase</footer>
+				</article>
+			</section>
+			<section>
+				<article>
+					<header><h2>Creando y borrando documentos en Firestore</h2></header>
+					<p>
+						Creacion de documentos:<br>
+						Se deja el ID automatico por parte de Firebase y se crea un nuevo campos
+						 los campos son similares a  los atributos en las BDR
+						 Tipos de datos en Firestore<br><br>
+						• String<br>
+						• Number<br>
+						• Boolenan<br>
+						• Map -> Da la opcion de meter otro document dentro del que ya estas creando<br>
+						• Array ->Arreglo para meter un grupo de datos que no se ocupa identificador y estructura<br>
+						• Null -> No se ha definido el valor<br>
+						• Timestamp<br>
+						• Geopoint ->Guarda una localización geográfica.<br>
+						• Reference -> Mandar liga a otro documento. Puede ser en la colección actual u otra colección<br>
+					</p>
+					<footer></footer>
+				</article>
+			</section>
+			<section>
+				<article>
+					<header><h2>Colecciones vs SUBcolecciones</h2></header>
+					<p>
+						Era como la entidad, etiquetas.
+						En guitarra puede ser "partes".
+					</p>
+					<footer>INVESTIGAR MUCHO!!!</footer>
+				</article>
+			</section>
+			<section>
+				<article>
+					<header><h2>Recreando base de datos creada en BDR</h2></header>
+					<p>
+						Firestore, es una base de datos basada en documentos, pensada en lo siguiente:<br>
+						Mantener el estado de tu aplicación.<br>
+						En como se verán reflejados los datos en el frontend para el usuario.<br>
+						Podemos hacer consultas sencillas en base a las top level collecttion. 
+						Ahora si queremos hacer consultas mas complejas podríamos usar big query, que es un data wharehouse.<br>
+					</p>
+					<footer></footer>
+				</article>
+			</section>
+			<section>
+				<article>
+					<header><h2>Recomendaciones de las NoSQL</h2></header>
+					<p>
+						Emplear colecciones de nivel cero para entidades fuertes, que mas adelante 
+						se empleen para realizar busquedas exhaustivas.<br>
+						Emplear subcolecciones para entidades débiles, que solo permitan plasmar información
+						 relacionada, pero que dicha data no sea una fuente de consulta primaria para nuestra aplicación.<br>
+						<br><br><br>
+						Dentro de las bases de datos relacionales tenemos diferentes niveles de datos. 
+						En primer lugar tenemos las Bases de Datos o Esquemas como repositorios donde 
+						vivirán los datos que nos interesa guardar. Dentro del esquema existen las 
+						Tablas que provienen del concepto de entidades; y a su vez dentro de las tablas tenemos las tuplas o renglones.<br>
+						Cuando trabajamos con bases de datos basadas en documentos como Firestore, 
+						aún existe la figura de la base de datos, sin embargo cambiaremos las tablas 
+						en favor de las colecciones y las tuplas en lugar de los documentos.<br>
+						Recuerda:<br><br>
+						Tabla -> Colección<br>
+						Tupla -> Documento<br><br>
+						Dentro de las Colecciones existen 2 grandes tipos. 
+						Las Top level collection o colecciones de nivel superior y las subcollections o subcolecciones. 
+						Estas últimas viven únicamente dentro de un documento padre.<br><br>
+						¿Cómo saber cuál escoger?<br><br>
+						Para determinar si tu colección debe ser top level o subcolección no hay una regla escrita 
+						en piedra y más bien tiene que ver con el caso de uso en particular y con la experiencia que hayas ganado como desarrollador.<br>
+						Lo cierto es que no hay una sola forma de estructurar nuestra DB basada en documentos, 
+						y por tanto no existe una respuesta correcta, sin embargo a continuación te ofrezco 
+						un par de reglas guía que puedes utilizar para transformar tu proyecto que ya trabajaste en 
+						bases de datos relacionales en un proyecto no relacional.<br><br>
+						Regla 1. Piensa en la vista de tu aplicación<br>
+						La primera pista que te puedo dar es que pienses en un inicio en la manera en que los datos serán extraídos. 
+						En el caso de una aplicación, la mejor forma de pensarlo es en términos de las vistas 
+						que vas a mostrar a un momento determinado en la aplicación.<br>
+						Es decir, al armar la estructura en la base de datos que sea un espejo o que 
+						al menos contenga todos los datos necesarios para llenar las necesidades que tiene nuestra parte visual en la aplicación.<br>
+						En el caso de Platziblog por ejemplo si tienes una vista de un blog post individual, 
+						generalmente conviene mostrar además de los datos inherentes al post como el contenido, 
+						datos adicionales como las etiquetas que tiene o por ejemplo el autor (o autores si es colaborativo), 
+						en este caso tal vez convenga guardar estas dos “entidades” (autores y etiquetas) como subcolecciones de cada documento blog post.<br><br>
+						Regla 2. La colección tiene vida propia<br>
+						Esta regla se refiere a que la excepción a la regla 1 es cuando tenemos un caso en que la “entidad” 
+						que tiene necesidad de vivir y modificarse constantemente de manera independiente a las otras colecciones. 
+						Por ejemplo en Platziblog podemos en el ejemplo anterior hacer una excepción a autores 
+						porque nos conviene tenerlas como top level collection en el sentido que se añadan, borren, 
+						cambien o listen los usuarios sin depender del blog post.<br>
+						Experimenta aplicando estas dos reglas a un proyecto que ya conozcas en una base de datos relacional 
+						y trata de convertirla en un proyecto de Firestore y comentanos los retos a los que te enfrentaste.<br>
+					</p>
+					<footer></footer>
+				</article>
+			</section>
+		</div>
+		<div>
+			<section>
+				<article>
+					<header><h2>Bases de datos en la vida real</h2></header>
+					<p>
+						De que sirven las bases de datos?<br><br>
+						Hay muuchas soluciones de datos para aplicaciones modernas<br>
+						El paradigma de las bases de datos relacionales se rompen cuando las apps se macifican,
+						 todo esto debido a BIG DATA.<br>
+						LAS RBD tienen muchos problemas con graaaaandes cantidades de datos, las operaciones se vuelven
+						 mas complejas y dificiles de procesar.<br>
+						Para ello se crearon las soluciones de las Bases de Datos no Relacionales.<br>
+						<br><br>
+						IMPORTANTE: Por lo general se hace uso de ambas modalidades de bases de datos, 
+						<br><br>
+						BDNR: Guardar big data en tiempo real.<br>
+						BDR: Realizar Querys y aplicar machine learning.<br>
+					</p>
+					<footer>AVERIGUAR MONGODB</footer>
+				</article>
+			</section>
+			<section>
+				<article>
+					<header><h2>Big Data</h2></header>
+					<p>
+						Big Data es un concepto que nace de la necesidad de manejar grandes cantidades de datos. 
+						La tendencia comenzó con compañías como YouTube al tener la necesidad de guardar y consultar mucha información de manera rápida.<br>
+						Es un gran movimiento que consiste en el uso de diferentes tipos de bases de datos.<br><br>
+						Increible el dato acerca de YOUTUBE :o <br>
+					</p>
+					<footer>INVESTIGAR!!!! Y DEFINIR QUE COÑO HACER CON LOS FOOTER</footer>
+				</article>
+			</section>
+			<section>
+				<article>
+					<header><h2>Data warehouse</h2></header>
+					<p>
+						Data Warehouse trata de guardar cantidades masivas de datos para la posteridad.<br> 
+						Allí se guarda todo lo que no está viviendo en la aplicación pero es necesario tenerlo.<br><br>
+						Debe servir para guardar datos por un largo periodo de tiempo y 
+						estos datos se deben poder usar para poder encontrar cuestiones 
+						interesantes para el negocio.<br>
+					</p>
+					<footer>AVERIGUAR ACERCA DE BIG TABLE</footer>
+				</article>
+			</section>
+			<section>
+				<article>
+					<header><h2>Data mining</h2></header>
+					<p>
+						jajajaja una definicion curiosa: "Data mining, consiste en torturar los datos hasta que confiesen".
+						El Data Mining se dedica a minar datos, a extraerlos de donde sea que estén (archivos muertos, 
+						base de datos actual, etc…) y hacer sentido de ellos para darles un uso.
+					</p>
+					<footer>MUUUUUUY INTERESANTE, BUSCAR CURSOS RELACIONADOS A ESTOOO!</footer>
+				</article>
+			</section>
+			<section>
+				<article>
+					<header><h2>ETL</h2></header>
+					<p>
+						ETL son las siglas de Extract, Transform, Load (extraer, transformar y cargar). 
+						Se trata de tomar datos de archivos muertos y convertirlos en algo que sea de utilidad para el negocio.<br><br>
+						También ayuda a tomar los datos vivos de la aplicación, transformarlos y 
+						guardarlos en un data warehouse periódicamente.<br>
+					</p>
+					<footer>ACA HAY PLATICA!!! JAJAJAJA INVESTIGAR</footer>
+				</article>
+			</section>
+			<section>
+				<article>
+					<header><h2>Business intelligence</h2></header>
+					<p>
+						Business Intelligence es una parte muy importante de las carreras de datos 
+						ya que es el punto final del manejo de estos. Su razón de ser es tener la información 
+						lista, clara y que tenga todos los elementos para tomar decisiones en una empresa.<br><br>
+						Es necesario tener una buena sensibilidad por entender el negocio, sus necesidades 
+						y la información que puede llevar a tomar decisiones en el momento adecuado 
+						al momento de realizar business intelligence.<br><br>
+					</p>
+					<footer></footer>
+				</article>
+			</section>
+			<section>
+				<article>
+					<header><h2>Machine Learning</h2></header>
+					<p>
+						Machine Learning tiene significados que varían. Es una serie de técnicas 
+						que involucran la inteligencia artificial y la detección de patrones.<br>
+						Machine learning para datos tiene un gran campo de acción y es un paso más allá 
+						del business intelligence.<br>
+						Nos ayuda a hacer modelos que encuentran patrones fortuitos encontrando correlaciones inesperadas.<br>
+						<br>Tiene dos casos de uso particulares:<br>
+						Clasificación<br>	
+						Predicción<br>
+						<br><br>
+						INVESTIGAR ACERCA DE BIG QUERY
+						<br><br>
+					</p>
+					<footer>ESTO ES IIIIIINNNNNCREIIIIIBLE!!!!!!</footer>
+				</article>
+			</section>
+			<section>
+				<article>
+					<header><h2>Data Science</h2></header>
+					<p>
+						Data Science es aplicar todas las técnicas de procesamiento de datos. 
+						En su manera más pura tiene que ver con gente con un background de estadísticas 
+						y ciencias duras.<br>
+					</p>
+					<footer>UN MAN DE ESOS SABE DE TOOODAS LAS DISCIPLINAS, ES EL PERRO DE LOS PERROS :O</footer>
+				</article>
+			</section>
+			<section>
+				<article>
+					<header><h2>¿Por que aprender bases de datos hoy?</h2></header>
+					<p>
+						¡Has concluido el curso! Ahora tienes potentes herramientas y 
+						posibilidades para ingresar en este apasionante campo.<br>
+						Llevaste diagramas a bases de datos, exploraste un poco el mundo 
+						de las bases de datos no relacionales, hicimos un proyecto en firestore 
+						y transformamos Platzi blog de una base de datos relacional en una base de datos de documentos.<br>
+						Dentro de las posibilidades que tienes hoy en día puedes hacer: 
+						Machine learning, ETL, Data Warehouse, Data mining, entre otros.<br>
+						Recuerda practicar mucho con el proyecto. Te invito a que tomes 
+						el examen y verifiques tus conocimientos. ¡Exitos!<br>
+					</p>
+					<footer>CONCLUIMOS PERROS!!! CONCLUIMOS!!!</footer>
+				</article>
+			</section>
+		</div>
+		<div>
+			<section>
+				<article>
+					<header><h2>Bases de datos relacionales vs no relacionales</h2></header>
+					<p>
+						INVESTIGAR COMO LAS GRANDES EMPRESAS USAN AMBOS MODELOS
+					</p>
+					<footer></footer>
+				</article>
+			</section>
+			<section>
+				<article>
+					<header><h2>Elegir una base de datos</h2></header>
+					<p>
+						Has aprendido todo lo necesario para comenzar a trabajar con 
+						bases de datos relacionales y no-relacionales. Ahora es probable 
+						que al momento de iniciar con un proyecto te enfrentes a la pregunta ¿qué tipo de base de datos debo elegir?.<br>
+						<br>El teorema CAP te ayuda a tomar en cuenta 3 factores clave:<br>
+						<br>Consistencia.<br>
+						Disponibilidad.<br>
+						Tolerancia a la partición.<br>
+					</p>
 					<footer></footer>
 				</article>
 			</section>

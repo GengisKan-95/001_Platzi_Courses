@@ -1,0 +1,38 @@
+1.Redacte linea de tiempo del tratamiento de datos
+2.¿Qué son las bases de datos?
+3.¿Qué son las bases de datos relacionales?
+4.Mencione plataformas para trabajar bases de datos relacionales
+5.¿Qué son las bases de datos NO relacionales?
+6.Mencione plataformas para trabajar bases de datos NO relacionales
+7.Mencione las 12 reglas de codd y una breve descripcion
+8.Servicios administrados y auto-administrados de las bases de datos
+9.¿Qué es la estructura de Von Neumann?
+10.Pensum de Albegra relacional.
+11.¿Qué es el modelo de E-R?
+12.Defina el tipo de entidades existentes
+13.Defina el tipo de atributos existentes
+14.¿Qué son las relaciones en un modelo E-R?
+15.¿Qué es la cardinalidad? ¿Qué tipos existen?
+16.Estructura de un diagrama E-R
+17.¿Qué es una ocurrrencia?
+18.Estructura de un diagrama físico
+19.Mencione los tipos de datos y una breve descripción
+20.Describa las limitaciones en un diagrama fisico.
+21.¿Qué es la normalizacion?
+22.Mencione los 4 pasos para la normalizacion
+23.¿Qué hacer al tener una relacion de M-N?
+24.¿Que es RDBMS? Mencione algunos existentes
+25.Mencione servicios administrador o de Cloud
+26.Realice linea de tiempo de SQL
+27.¿Qué es DDL y para qué sirve?
+28.¿Qué es DML y para que sirve?
+29.¿Porqué SQL es estandar?
+30.Para que sirven las tablas transitivas
+31.¿Qué es una consulta en una base de datos y para que sirve?
+32.Mencione la estructura de un Query con todas las declaraciones
+33.Mencione las 10 palabras clave más utilizadas en SQL al hacer consultas
+34.¿Qué son las bases de datos no relacionales? ¿Cómo es su estructura?
+35.¿Qué es Firebase? ¿Que plataformas similares existen?
+36.papel en las BDNoR de Colecciones y subcolecciones
+37.Disciplinas que se pueden desempeñar teniendo conocimiento en bases de datos
+38.¿Qué es el teorema de CAP?
